@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Developer Tools</category>
+  <title>slicer-cli</title>
+  <description>Sample slicer CLI in Python which runs a gaussian filter.</description>
+  <version>0.0.0</version>
+  <documentation-url>http://wiki.slicer.org/slicerWiki/index.php/Documentation/Nightly/Modules/ExecutionModelTour</documentation-url>
+  <license/>
+  <contributor>Mayeul Chassagnard (Kitware)</contributor>
+  <acknowledgements>This work is part of the National Alliance for Medical Image Computing (NAMIC), funded by the National Institutes of Health through the NIH Roadmap for Medical Research, Grant U54 EB005149.</acknowledgements>
+  <parameters>
+    <double>
+      <longflag>sigma</longflag>
+      <description>A double</description>
+      <label>Sigma</label>
+      <channel>input</channel>
+      <default>3</default>
+    </double>
+    <image>
+      <longflag>inputImageFile</longflag>
+      <description>An input image</description>
+      <label>Input image</label>
+      <channel>input</channel>
+    </image>
+    <image>
+      <longflag>outputImageFile</longflag>
+      <description>An output image</description>
+      <label>Output image</label>
+      <channel>output</channel>
+    </image>
+  </parameters>
+</executable>

@@ -55,7 +55,7 @@ def CLIListEntrypoint(cli_list_spec_file=None):
 
     if cli_list_spec_file is None:
         cli_list_spec_file = os.path.join(os.getcwd(), 'slicer_cli_list.json')
-        print(cli_list_spec_file)
+        #print(cli_list_spec_file)
 
     # Parse CLI List spec
     with open(cli_list_spec_file) as f:
@@ -86,7 +86,7 @@ def CLIListEntrypoint(cli_list_spec_file=None):
     if cli_list_spec[args.cli]['type'] == 'python':
         script_file = os.path.join(args.cli,
                                    os.path.basename(args.cli) + '.py')
-        print(script_file)
+        #print(script_file)
         # python <cli-rel-path>/<cli-name>.py [<args>]
         subprocess.call([sys.executable, script_file] + sys.argv[2:])
 
